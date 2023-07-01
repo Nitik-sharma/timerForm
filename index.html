@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <center>
+        <div class="time">
+          <spna id="hrs">00Hours:00Minutes:00Seconds</spna>
+        </div>
+      </center>
+    </nav>
+
+    <div class="container">
+      <center><h1>Student Registration Form</h1></center>
+      <hr />
+      <div class="first-name">
+        <label for="name">First-Name:-</label>
+        <input type="text" name="name" id="name" placeholder="First Name" />
+      </div>
+
+      <div class="last-name">
+        <label for="l-name">Last-Name:-</label>
+        <input type="text" name="l-name" id="l-name" placeholder="Last Name" />
+      </div>
+
+      <div class="Gender">
+        <label for="Gender">Gender</label>
+        <span class="gender">
+          <input type="radio" name="male" id="male" /><span>Male</span>
+          <input type="radio" name="male" id="female" /><span>Female</span>
+          <input type="radio" name="male" id="other" /><span>Other</span>
+        </span>
+      </div>
+
+      <div class="number">
+        <label for="number">Phone-Num:-</label>
+        <input
+          type="text"
+          name="number"
+          id="number"
+          placeholder="012...."
+          maxlength="10"
+        />
+      </div>
+
+      <div class="Address">
+        <label for="Address">Address:-</label>
+        <input
+          type="text"
+          name="Address"
+          id="Address"
+          placeholder="Enter your Address"
+        />
+      </div>
+
+      <div class="Email">
+        <label for="email">Email:-</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="someone@gmail.com"
+        />
+      </div>
+      <div class="password">
+        <label for="password">Password:-</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Enter your password"
+        />
+      </div>
+
+      <div class="img">
+        <label for="">Image</label>
+        <input
+          type="file"
+          id="avatar"
+          name="avatar"
+          accept="image/png, image/jpeg"
+        /><br />
+      </div>
+      <img src="" alt="" id="display" />
+
+      <div class="resume">
+        <label for="">Resume</label>
+        <input
+          name="userfile"
+          type="file"
+          accept="application/pdf, application/vnd.ms-excel"
+          id="upload-Resume"
+        /><br />
+      
+      <iframe src="" frameborder="0" id="pdfShow"></iframe>
+    </div>
+    <button id="submit">Submit</button>
+  </body>
+  <script src="script.js"></script>
+</html>
